@@ -1,0 +1,8 @@
+.devcontainer
+.github
+
+# Python env
+venv
+
+# env variables
+.env
