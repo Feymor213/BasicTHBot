@@ -4,6 +4,8 @@ from telegram import Update
 from telegram.ext import CommandHandler, MessageHandler, filters, ContextTypes, Application
 import os
 
+load_dotenv()
+
 API_TOKEN: Final = os.getenv("API_TOKEN")
 BOT_USERNAME: Final = "@test_hubnusle_bot"
 
