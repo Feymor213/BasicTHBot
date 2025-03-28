@@ -6,7 +6,6 @@ import os
 load_dotenv()
 
 API_TOKEN = os.getenv("API_TOKEN")
-print(API_TOKEN)
 
 async def start_command(update: Update, context):
     print("Message received: ", update.message.text)
