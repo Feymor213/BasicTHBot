@@ -41,11 +41,41 @@ a == "Hello world" # True/False
 b = a == 'Hello world' # True
 
 
+# TELEGRAM Бібліотека
+# Імпортування необхідних функцій та класів з бібліотеки
+from telegram import Update
+from telegram.ext import CommandHandler, MessageHandler, filters, ContextTypes, Application
+
+# 
+from dotenv import load_dotenv
+import os
+
+# Ім
+
+# Задати змінну API_TOKEN, в якій зберігатиметься токен нашого бота
+API_TOKEN = os.getenv("API_TOKEN")
+
+def fetch_name():
+    return "Maxim"
 
 
 
 
 
+def privytannya(func):
+    name = fetch_name()
+
+    print(func(name))
+
+
+def privit(name):
+    return "Привіт, " + name + ", як справи?"
+
+def goodbye(name):
+    return "Прощавай, " + name
 
 
 
+
+privytannya(privit)
+privytannya(goodbye)
